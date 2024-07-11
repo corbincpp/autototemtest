@@ -10,3 +10,7 @@ Cheers!
 Usage:
 
 /totemtest <player> 
+
+Permissions:
+
+totemtest.use
