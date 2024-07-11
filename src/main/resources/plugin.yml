@@ -1,0 +1,10 @@
+name: AutoTotemTest
+version: '${project.version}'
+main: wtf.corbin.autototemtest.Main
+api-version: '1.20'
+folia-supported: true
+commands:
+  totemtest:
+    description: Used to test for auto totem
+    usage: /<command>
+    permission: totemtest.use
