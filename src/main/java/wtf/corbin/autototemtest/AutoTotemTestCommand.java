@@ -30,6 +30,12 @@ public class AutoTotemTestCommand implements CommandExecutor, Listener {
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if (commandSender instanceof Player) {
             final Player sender = (Player) commandSender;
+
+            if (!sender.hasPermission("totemtest.use")) {
+                sender.sendMessage(ChatColor.RED + "You do not have permission to use this command");
+                return true;
+            }
+
             if (strings.length != 1) {
                 sender.sendMessage(ChatColor.RED + "Incorrect Usage." + ChatColor.DARK_RED + " Use /totemtest <player>");
                 return true;
